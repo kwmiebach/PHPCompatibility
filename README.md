@@ -1,4 +1,4 @@
-# phpcs docker image with PHP Compatiblity Ruleset
+# phpcs docker image with PHPCompatibility Ruleset
 
 [Docker_Hub](https://hub.docker.com/r/domw/phpcompatibility)
 
