@@ -16,9 +16,9 @@
 
 ## Test
 
-    docker-compose run --rm phpcompatibility
+    docker-compose run --rm phpcs phpcs
     
-    docker-compose run --rm phpcompatibility -i
+    docker-compose run --rm phpcs phpcs -i
     
 ## Usage
     

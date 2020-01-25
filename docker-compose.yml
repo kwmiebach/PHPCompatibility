@@ -2,5 +2,5 @@ version: "2"
 services:
 
   phpcs:
-    image: domw/phpcompatiblity:7.1-cli
+    image: domw/phpcompatibility:7.1-cli
     restart: 'always'
