@@ -24,14 +24,14 @@
     
     docker pull domw/phpcompatibility
     
-    docker run --rm -v $PWD:/code:ro domw/phpcompatibility phpcs --version
+    docker run --rm -v $PWD:/code domw/phpcompatibility phpcs --version
     
-    docker run --rm -v $PWD:/code:ro domw/phpcompatibility phpcs -i
+    docker run --rm -v $PWD:/code domw/phpcompatibility phpcs -i
        
-    docker run --rm -v $PWD:/code:ro domw/phpcompatibility phpcs --standard=PHPCompatibility --runtime-set testVersion 5.6 /path/to/code
+    docker run --rm -v $PWD:/code domw/phpcompatibility phpcs --standard=PHPCompatibility --runtime-set testVersion 5.6 /path/to/code
     
-    docker run --rm -v $PWD:/code:ro domw/phpcompatibility phpcs --standard=PHPCompatibility --runtime-set testVersion 5.5-5.6 --report=full,summary,gitblame /path/to/code
+    docker run --rm -v $PWD:/code domw/phpcompatibility phpcs --standard=PHPCompatibility --runtime-set testVersion 5.5-5.6 --report=full,summary,gitblame /path/to/code
     
-    docker run --rm -v $PWD:/code:ro domw/phpcompatibility phpcs --standard=PHPCompatibility --runtime-set testVersion 7.0 --colors --warning-severity=0  --report=full,summary,gitblame /path/to/code
+    docker run --rm -v $PWD:/code domw/phpcompatibility phpcs --standard=PHPCompatibility --runtime-set testVersion 7.0 --colors --warning-severity=0  --report=full,summary,gitblame /path/to/code
     
-    docker run --rm -v $PWD:/code:ro domw/phpcompatibility phpcs --standard=PHPCompatibility --runtime-set testVersion 7.0 --colors --warning-severity=0 --report=full,summary --extensions=php,phtml /path/to/code
+    docker run --rm -v $PWD:/code domw/phpcompatibility phpcs --standard=PHPCompatibility --runtime-set testVersion 7.0 --colors --warning-severity=0 --report=full,summary --extensions=php,phtml /path/to/code
