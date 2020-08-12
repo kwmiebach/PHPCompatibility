@@ -3,6 +3,9 @@ FROM php:7.4-cli
 
 MAINTAINER Dominic <dominic@xigen.co.uk>
 
+ENV COMPOSER_ALLOW_SUPERUSER=1 \
+    PHP_MEMORY_LIMIT=512M
+
 RUN apt-get update \
  && apt-get install -y \
     zlib1g-dev \
